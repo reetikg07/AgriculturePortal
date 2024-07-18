@@ -50,6 +50,54 @@ public class Feedback {
 	@ManyToOne
 	@JoinColumn(name="customerId")
 	private Customer customer;
+
+	public int getFeedbackId() {
+		return feedbackId;
+	}
+
+	public void setFeedbackId(int feedbackId) {
+		this.feedbackId = feedbackId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public int getRating() {
+		return rating;
+	}
+
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
 	
 	
 }

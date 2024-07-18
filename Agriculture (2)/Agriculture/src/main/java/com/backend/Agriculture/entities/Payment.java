@@ -43,6 +43,46 @@ public class Payment {
 	//@NotBlank(message="Date must be supplied")
 	private Date paymentDate;
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public long getCardNo() {
+		return cardNo;
+	}
+
+	public void setCardNo(long cardNo) {
+		this.cardNo = cardNo;
+	}
+
+	public String getNameOnCard() {
+		return nameOnCard;
+	}
+
+	public void setNameOnCard(String nameOnCard) {
+		this.nameOnCard = nameOnCard;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	public Date getPaymentDate() {
+		return paymentDate;
+	}
+
+	public void setPaymentDate(Date paymentDate) {
+		this.paymentDate = paymentDate;
+	}
+
 	@Override
 	public String toString() {
 		return "Payment [id=" + id + ", cardno=" + cardNo + ", nameOnCard=" + nameOnCard + ", amount=" + amount

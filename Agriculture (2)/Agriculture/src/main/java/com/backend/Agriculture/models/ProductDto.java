@@ -31,6 +31,72 @@ public class ProductDto {
 	//used while uploading the product
 	private MultipartFile pic;
 	
+	
+	
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getSellerId() {
+		return sellerId;
+	}
+
+	public void setSellerId(int sellerId) {
+		this.sellerId = sellerId;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
+	public MultipartFile getPic() {
+		return pic;
+	}
+
+	public void setPic(MultipartFile pic) {
+		this.pic = pic;
+	}
+
 	@Override
 	public String toString() {
 		return "ProductDTO [productId=" + productId + ", pname=" + pname + ", categoryName=" + categoryName + ",price=" + price + ", sellerId=" + sellerId + "]";
